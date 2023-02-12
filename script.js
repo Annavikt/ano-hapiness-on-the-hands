@@ -125,3 +125,29 @@ function readMore() {
 }
 btnText.addEventListener('click', readMore);
 }
+
+
+const btnUp = { 
+    el: document.querySelector('.footer_arrow'),
+    show() {
+        this.el.classList.remove('footer_arrow_hide')
+    },
+    hide() {
+        this.el.classList.add('footer_arrow_hide')
+    },
+    addEventListener() {
+        window.addEventListener('scroll',() =>
+        {const scrollY = window.scrollY || document.documentElement.scrollTop;
+            scrollY > 400 ? this.show() : this.hide();
+        });
+        document.querySelector('.footer_arrow').onclick = () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+btnUp.addEventListener();

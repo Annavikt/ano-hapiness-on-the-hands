@@ -86,7 +86,7 @@ header a:hover {
 }
 
 .personnel {
-    padding: 20px;
+    padding: 20px 100px 20px 100px;
     background: linear-gradient(180deg, rgba(111, 235, 183, 1) 0%, rgba(243, 247, 246, 0.8099614845938375) 100%);
 }
 
@@ -147,6 +147,9 @@ header a:hover {
     font-style: italic;
 }
 
+.news {
+    padding: 20px 100px 20px 100px;
+}
 .news h1 {
     align-items: center;
     color: #012781;
@@ -232,11 +235,10 @@ header a:hover {
 
 .projects {
     background: linear-gradient(180deg, rgba(243, 247, 246, 1) 0%, rgba(164, 240, 208, 1) 100%);
+    padding: 20px 100px 20px 100px;
 }
 
-.events {
-    background: linear-gradient(180deg, rgb(200 243 225) 0%, rgba(220, 241, 242, 0.7343312324929971) 100%);
-}
+
 .events h1 {
     align-items: center;
     color: #012781;
@@ -249,7 +251,8 @@ header a:hover {
 
 .publications {
     margin-top: 0px;
-    background: #cef1e9;
+    background: linear-gradient(180deg, rgba(164, 240, 208, 1) 0%, rgba(206, 241, 233, 1) 100%);
+    padding: 20px 100px 20px 100px;
 }
 .article {
     display: grid;
@@ -311,6 +314,7 @@ margin: 10px;
 
 .partners {
     background: linear-gradient(180deg, rgba(206, 241, 233, 1) 0%, rgba(8, 21, 191, 0.30015756302521013) 100%);
+    padding: 20px 100px 20px 100px;
 }
 .partners_list {
     display: flex;
@@ -346,7 +350,7 @@ margin: 10px;
 
 .documents {
     background: linear-gradient(180deg, rgba(8, 21, 191, 0.30015756302521013) 0%, rgba(8, 191, 139, 0.192) 100%);
-    padding: 60px 0px 25px 0px;
+    padding: 20px 100px 20px 100px;
 }
 
 .documents h1 {
@@ -385,7 +389,64 @@ margin: 10px;
     color: #ed7f09;
 }
 
+.contacts {
+    padding: 50px;
+    background: linear-gradient(180deg, rgba(198, 236, 227, 1) 0%, rgba(3, 20, 80, 0.7231267507002801) 100%);
+    padding: 20px 100px 20px 100px;
+}
 
+.contacts p {
+    line-height: 22px;
+}
+
+.contacts_mail, .contacts_phone {
+    padding: 15px 0px 15px 0px;
+}
+
+.contacts_adress {
+    border-radius: 10px;
+    border: 3px #9be28cb8 solid; 
+    box-shadow: 0px 0px 15px 10px rgb(0 0 12 / 20%); 
+    width: 500px;
+    height: 400px;
+    margin: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #3f4041;
+    padding-top:  20px;
+   
+}
+footer a {
+    text-decoration: none;
+    color: #cee1e3;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer_arrow {
+    font-size: 36px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    
+}
+
+.footer_arrow i {
+    color: #ed7f0957;
+}
+
+.footer_arrow i:hover {
+    color: #ed7f09;
+    cursor: pointer;
+}
+.footer_arrow_hide {
+    display: none;
+}
 
 
 
