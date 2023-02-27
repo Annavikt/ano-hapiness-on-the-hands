@@ -14,6 +14,74 @@ header {
     background: linear-gradient(180deg, rgba(17, 90, 232, 0.258140756302521) 0%, rgba(243, 247, 246, 1) 100%);
     
 }
+
+.nav_menu {
+    display: flex;
+    
+}
+
+.nav_menu ul {
+    list-style: none;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.burger_menu {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger_menu span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #213053;
+}
+
+.burger_menu::before, .burger_menu::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #213053;
+    transition: all 0.3s ease 0s;
+}
+
+.burger_menu::before {
+    top: 0;
+}
+
+.burger_menu::after{
+    bottom: 0;
+}
+
+.burger_menu.active span {transform: scale(0);}
+
+.burger_menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+    
+.burger_menu.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+}
+
+.open {
+    display: flex !important;
+}
+
+
+
+
 .header_logo_image {
     height: 200px;
     width: 200px;
@@ -45,13 +113,12 @@ header a:hover {
     font-size: 20px;
 }
 .about_info ul {
-    line-height: 60px;
     font-weight: 600;
     list-style: none;
     margin-top: 100px;
 }
 .about_info li {
-    padding: 15px;
+    padding: 35px;
 }
 .about_info h1 {
     display: inline-block;
@@ -351,6 +418,7 @@ margin: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 15px;
     margin-top: 60px;
 }
 
@@ -445,8 +513,9 @@ margin: 10px;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
     background: #3f4041;
     padding-top:  20px;
    
@@ -479,7 +548,6 @@ footer ul {
 .footer_arrow_hide {
     display: none;
 }
-
 
 
 

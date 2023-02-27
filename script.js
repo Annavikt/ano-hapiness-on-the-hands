@@ -166,4 +166,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   addSmoothScroll(anchor);
 });
 
-addSmoothScroll(document.querySelector('.smoth'));
+addSmoothScroll(document.querySelector('.smooth'));
+
+document.querySelector('.burger_menu').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav_menu').classList.toggle('open');
+})
+
+document.querySelectorAll('.nav_menu ul li').forEach((el) => {
+    el.addEventListener('click', function() {
+    document.querySelector('.nav_menu').classList.remove('open');
+    document.querySelector('.burger_menu').classList.remove('active');
+    })
+})
