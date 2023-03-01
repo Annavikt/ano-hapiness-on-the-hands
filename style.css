@@ -279,15 +279,7 @@ header a:hover {
     color: #012781;
  }
 
- /* .projects video {
-    margin-left: 0;
-    max-width: 500px;
-    max-height: 400px;
-    border-radius: 5px;
-    object-fit: cover;
- } */
 .slider_container {
-    position: relative;
     width: 80%;
 }
 
@@ -295,7 +287,7 @@ header a:hover {
     position:absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0px;
+    left: 12px;
     font-size: 60px; 
     opacity: 0.5;  
 }
@@ -329,6 +321,7 @@ header a:hover {
 .project1_photoes, .project2_photoes, .project3_photoes, .project4_photoes, .project5_photoes, .event1_photoes, .event2_photoes, .event3_photoes, .event4_photoes {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .projects {
@@ -374,8 +367,8 @@ margin: 10px;
 }
 .article img {
     object-fit: cover;
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
     padding: 20px;
     
 }

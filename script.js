@@ -179,3 +179,4 @@ document.querySelectorAll('.nav_menu ul li').forEach((el) => {
     document.querySelector('.burger_menu').classList.remove('active');
     })
 })
+
