@@ -75,6 +75,7 @@
 
     .about_info ul {
         margin-top: 0px;
+        padding: 0px;
     }
 
     .about_info button {
@@ -94,6 +95,10 @@
         font-size: 24px;
     }
 
+    :is(.personnel, .projects, .events ) p{
+        padding: 0;
+    }
+
     .video button {
         padding: 10px;
         margin: 15px;
@@ -106,6 +111,7 @@
 
     .about_info li {
         padding: 30px 0px 30px 0px;
+        font-size: 17px;
     }
 
     .personnel, .projects, .contacts, .documents, .publications {
@@ -113,8 +119,8 @@
     }
 
     .slider_item {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 350px;
+        max-height: 350px;
     }
 
     /* .slider_images {
